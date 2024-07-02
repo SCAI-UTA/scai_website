@@ -58,3 +58,7 @@ const Hero = () => (
 );
 
 export default Hero;
+// <<<<<<< HEAD
+// =======
+ 
+// >>>>>>> 0ab57f3 (Initial commit)
