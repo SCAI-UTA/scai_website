@@ -27,17 +27,19 @@ export const exploreWorlds = [
 ];
 
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading precaution to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+  'Understand Basic of ML and master python programming',
+  'Explore data science and deep learning',
+  'Introduction to Generative AI',
+  'Engage in Hands on projects and challenges'
 ];
 
 export const newFeatures = [
   {
     imgUrl: '/vrpano.svg',
-    title: 'A new world',
+    title: 'Neural Networks Basics Workshop',
+    date: 'Sunday 06/23/24, 7:30 pm',
     subtitle:
-        'we have the latest update with new world for you to try never mind',
+        'This workshop aims to provide students with a fundamental understanding of neural networks, and we encourage all interested students to join us',
   },
   {
     imgUrl: '/headset.svg',
