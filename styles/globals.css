@@ -105,3 +105,8 @@
   background: #65c4fa;
   filter: blur(150px);
 }
+
+.feature-date {
+  font-size: 6px;
+  color: #969696;
+}
