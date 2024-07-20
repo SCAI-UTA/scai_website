@@ -114,41 +114,39 @@ const Hero = () => {
             className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
           />
 
-          <a href="#explore">
-            <div className="w-full flex justify-between sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10 2xl:-ml-[100px]">
-              <div className="flex items-center gap-4">
-                <a href="https://discord.com/invite/ZZrgf9XsD4" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src="/disc.jpeg"
-                    alt="Discord"
-                    className="w-10 h-10 object-contain rounded-lg shadow-md"
-                  />
-                </a>
-                <a href="https://www.instagram.com/scai_uta?igsh=MTgxamljaGxmOWoxeQ==" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src="/instagram.svg"
-                    alt="Instagram"
-                    className="w-10 h-10 object-contain"
-                  />
-                </a>
-                <a href="https://github.com/SCAI-UTA" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src="/github.png"
-                    alt="Github"
-                    className="w-10 h-10 object-contain rounded-lg shadow-md"
-                  />
-                </a>
-              </div>
-
-              <motion.img
-                src="/scai.jpeg"
-                alt="stamp"
-                className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain rounded-full"
-                animate={{ rotate: 360 }}
-                transition={{ repeat: Infinity, duration: 7, repeatType: 'loop' }}
-              />
+          <div className="w-full flex justify-between sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10 2xl:-ml-[100px]">
+            <div className="flex items-center gap-4">
+              <a href="https://discord.com/invite/ZZrgf9XsD4" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="/disc.jpeg"
+                  alt="Discord"
+                  className="w-10 h-10 object-contain rounded-lg shadow-md"
+                />
+              </a>
+              <a href="https://www.instagram.com/scai_uta?igsh=MTgxamljaGxmOWoxeQ==" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="/instagram.svg"
+                  alt="Instagram"
+                  className="w-10 h-10 object-contain"
+                />
+              </a>
+              <a href="https://github.com/SCAI-UTA" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="/github.png"
+                  alt="Github"
+                  className="w-10 h-10 object-contain rounded-lg shadow-md"
+                />
+              </a>
             </div>
-          </a>
+
+            <motion.img
+              src="/scai.jpeg"
+              alt="stamp"
+              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain rounded-full"
+              animate={{ rotate: 360 }}
+              transition={{ repeat: Infinity, duration: 7, repeatType: 'loop' }}
+            />
+          </div>
         </motion.div>
       </motion.div>
     </section>
