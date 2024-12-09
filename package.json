@@ -12,9 +12,9 @@
   "dependencies": {
     "eslint-config-next": "13.0.3",
     "framer-motion": "^7.6.7",
-    "next": "^14.2.20",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "next": "^15.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
@@ -26,5 +26,18 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.4.19",
     "tailwindcss": "^3.2.4"
-  }
+  },
+  "description": "First, run the development server:",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcghpge/scai_website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcghpge/scai_website/issues"
+  },
+  "homepage": "https://github.com/rcghpge/scai_website#readme"
 }
