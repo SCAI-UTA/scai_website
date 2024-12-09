@@ -12,7 +12,7 @@
   "dependencies": {
     "eslint-config-next": "13.0.3",
     "framer-motion": "^7.6.7",
-    "next": "^14.2.4",
+    "next": "^14.2.20",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
