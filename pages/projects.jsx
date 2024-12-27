@@ -5,7 +5,7 @@ import { TypingText } from '../components';
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
-const About = () => (
+const Projects = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <div className="gradient-02 z-0" />
 
@@ -17,7 +17,7 @@ const About = () => (
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
       <TypingText
-        title="About SCAI"
+        title="| Our Projects"
         textStyles="text-center"
       />
 
@@ -25,9 +25,8 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold"> SCAI @ UTA </span> is a student led organization that works to increase the involvement of students in the parameter of Artificial Intelligence. As we all know, the use of AI is scaling up rapidly. It is only a matter of time that we start using AI in all fields. Therefore, SCAI is working to help students get started with AI development, arrange fun events to gather public interest and involvement. 
-
-
+        {/* Replace with your projects content */}
+        <span className="font-extrabold">Our Projects:</span> Description of your projects goes here.
       </motion.p>
 
       <motion.img
@@ -40,4 +39,4 @@ const About = () => (
   </section>
 );
 
-export default About;
+export default Projects;
