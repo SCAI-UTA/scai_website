@@ -17,7 +17,7 @@ const About = () => (
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
       <TypingText
-        title="| About SCAI"
+        title="About SCAI"
         textStyles="text-center"
       />
 
@@ -25,7 +25,7 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold"> SCAI </span> is a student led organization that works to increase the involvement of students in the parameter of Artificial Intelligence. As we all know, the use of AI is scaling up rapidly. It is only a matter of time that we start using AI in all fields. Therefore, SCAI is working to help students get started with AI development, arrange fun events to gather public interest and involvement. 
+        <span className="font-extrabold"> SCAI @ UTA </span> is a student led organization that works to increase the involvement of students in the parameter of Artificial Intelligence. As we all know, the use of AI is scaling up rapidly. It is only a matter of time that we start using AI in all fields. Therefore, SCAI is working to help students get started with AI development, arrange fun events to gather public interest and involvement. 
 
 
       </motion.p>

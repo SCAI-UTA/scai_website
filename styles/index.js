@@ -17,11 +17,11 @@ const styles = {
     // hero section
     
     heroHeading:
-        'font-bold lg:text-[114px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white',
+        'font-bold lg:text-[64px] md:text-[48px] sm:text-[36px] text-[38px] lg:leading-[74.4px] md:leading-[54.4px] sm:leading-[44.4px] leading-[34.4px] uppercase text-white',
     heroDText:
         'md:w-[212px] sm:w-[80px] w-[60px] md:h-[90px] sm:h-[48px] h-[38px] md:border-[18px] sm:border-[8px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]',
     heroHeadingLarge:
-        'font-bold lg:text-[154px] md:text-[140px] sm:text-[100px] text-[84px] lg:leading-[198.4px] md:leading-[154.4px] sm:leading-[114.4px] leading-[104.4px] uppercase text-white',
+        'font-bold lg:text-[64px] md:text-[48px] sm:text-[36px] text-[38px] lg:leading-[74.4px] md:leading-[54.4px] sm:leading-[44.4px] leading-[34.4px] uppercase text-white',
   };
   
   
