@@ -71,19 +71,29 @@ export const insights = [
 ];
 
 export const socials = [
+//  {
+//    name: 'twitter',
+//    url: '/twitter.svg',
+//    link: 'https://twitter.com/VigneshGupta9',
+//  }, # Add SCAI UTA X page when it is established here.
   {
-    name: 'twitter',
-    url: '/twitter.svg',
-    link: 'https://twitter.com/VigneshGupta9',
+    name: 'discord',
+    url: '/disc.jpeg',
+    link: 'https://discord.com/invite/ZZrgf9XsD4',
   },
   {
     name: 'linkedin',
     url: '/linkedin.svg',
-    link: 'https://www.linkedin.com/in/vigneshgupta/',
+    link: 'https://www.linkedin.com/company/scai-uta/',
   },
   {
     name: 'instagram',
     url: '/instagram.svg',
-    link: 'https://www.instagram.com/_viggi.g_/',
+    link: 'https://www.instagram.com/scai_uta/',
+  },
+  {
+    name: 'github',
+    url: '/github.png',
+    link: 'https://github.com/SCAI-UTA',
   },
 ];
