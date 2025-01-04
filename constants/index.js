@@ -30,7 +30,7 @@ export const startingFeatures = [
   'Understand Basic of ML and master python programming',
   'Explore data science and deep learning',
   'Introduction to Generative AI',
-  'Engage in Hands on projects and challenges'
+  'Engage in Hands on projects and challenges',
 ];
 
 export const newFeatures = [
