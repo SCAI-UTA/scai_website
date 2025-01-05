@@ -3,7 +3,8 @@
 First, run the development server:
 
 ```bash
-npm install next react react-dom
+npm update
+npm install
 npm run dev
 # or
 yarn add next react react-dom
