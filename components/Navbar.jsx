@@ -5,24 +5,28 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
 
+const menuItems = [
+  { href: '#about', label: 'About' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#howaiworks', label: 'How AI Works' },
+  { href: '#whatsnew', label: 'What\'s New @ SCAI' },
+  { href: '#globalimpact', label: 'Global Impact' },
+  { href: '#insights', label: 'Insights' },
+  { href: '#presidentaddress', label: 'SCAI President Address' },
+];
+
 const Navbar = () => {
   const [showSearch, setShowSearch] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
-  const toggleSearch = () => {
-    setShowSearch(!showSearch);
-  };
+  const toggleSearch = () => setShowSearch(!showSearch);
+  const toggleMenu = () => setShowMenu(!showMenu);
 
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
-
-  // Close dropdown menu when clicking outside
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (
-        !event.target.closest('.dropdown-menu') &&
-        !event.target.closest('.menu-btn')
+        !event.target.closest('.dropdown-menu')
+        && !event.target.closest('.menu-btn')
       ) {
         setShowMenu(false);
       }
@@ -44,16 +48,15 @@ const Navbar = () => {
       <div className="absolute w-[50%] inset-0 gradient-01" />
 
       <div className={`${styles.innerWidth} mx-auto flex items-center justify-between gap-8`}>
-        {/* Left Section: Logo and Search */}
+        {/* Logo and Search */}
         <div className="flex items-center gap-4">
           <img
             src="/scai.jpeg"
             alt="logo"
             className="w-[80px] h-auto rounded-lg shadow-md"
           />
-
-          {/* Search Icon */}
           <button
+            type="button" // Added explicit type
             onClick={toggleSearch}
             className="p-2 focus:outline-none"
             aria-label="Toggle Search"
@@ -71,8 +74,9 @@ const Navbar = () => {
           SCAI
         </h2>
 
-        {/* Menu Icon */}
+        {/* Menu Button */}
         <button
+          type="button" // Added explicit type
           onClick={toggleMenu}
           className="p-2 focus:outline-none menu-btn"
           aria-label="Toggle Menu"
@@ -85,7 +89,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Search Input */}
+      {/* Search Bar */}
       {showSearch && (
         <div className="mt-4 mx-auto flex justify-center">
           <input
@@ -102,27 +106,15 @@ const Navbar = () => {
         <div
           className="absolute top-[100%] right-0 mt-2 bg-white text-black rounded-lg shadow-lg py-2 w-[200px] z-50 dropdown-menu"
         >
-          <a href="#about" className="block px-4 py-2 hover:bg-gray-200">
-            About
-          </a>
-          <a href="#projects" className="block px-4 py-2 hover:bg-gray-200">
-            Projects
-          </a>
-          <a href="#howaiworks" className="block px-4 py-2 hover:bg-gray-200">
-            How AI Works
-          </a>
-	  <a href="#about" className="block px-4 py-2 hover:bg-gray-200">
-            What's New @ SCAI
-          </a>
-          <a href="#projects" className="block px-4 py-2 hover:bg-gray-200">
-            Global Impact
-          </a>
-          <a href="#howaiworks" className="block px-4 py-2 hover:bg-gray-200">
-            Insights
-          </a>
-          <a href="#howaiworks" className="block px-4 py-2 hover:bg-gray-200">
-            SCAI President Address
-          </a>
+          {menuItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              className="block px-4 py-2 hover:bg-gray-200"
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
       )}
     </motion.nav>
